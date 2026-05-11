@@ -1,0 +1,11 @@
+Options -Indexes
+RewriteEngine On
+ 
+# Não redireciona arquivos reais
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+ 
+# Redireciona tudo para index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+ 
+
