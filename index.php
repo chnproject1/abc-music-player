@@ -129,22 +129,6 @@ $tem_letra = trim($letra_raw) !== '';
       font-size: 64px;
     }
  
-    /* ── Título ── */
-    .song-title {
-      font-size: 22px;
-      font-weight: 700;
-      text-align: center;
-      line-height: 1.3;
-      margin-bottom: 6px;
-      color: #ffffff;
-    }
-    .song-sub {
-      font-size: 14px;
-      color: #5ecea0;
-      text-align: center;
-      margin-bottom: 32px;
-    }
- 
     /* ── Player ── */
     .player {
       width: 100%;
@@ -311,12 +295,6 @@ $tem_letra = trim($letra_raw) !== '';
       <div class="cover-placeholder">🎵</div>
     <?php endif; ?>
   </div>
- 
-  <!-- Título -->
-  <h1 class="song-title"><?= $titulo ?></h1>
-  <?php if ($nome): ?>
-    <p class="song-sub">Uma música feita para <?= $nome ?></p>
-  <?php endif; ?>
  
   <!-- Player -->
   <div class="player">
